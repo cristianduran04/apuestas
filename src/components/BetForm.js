@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { db, collection, addDoc } from "../firebase/firebaseConfig";
+import { db } from "../firebase/firebaseConfig";
+import { collection, addDoc } from "firebase/firestore";
+
 
 const BetForm = ({ cargarApuestas }) => {
     const [name, setName] = useState("");

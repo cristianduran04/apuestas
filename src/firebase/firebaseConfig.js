@@ -1,6 +1,8 @@
+// Importar Firebase y Firestore
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore"; 
 
+// Configuración de Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyA6-yruvoPpWdlFpRYkFGF7UzSc22__Sdo",
   authDomain: "apuesta-c4281.firebaseapp.com",
@@ -15,4 +17,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-export { db, collection, getDocs, addDoc };
+// Exportar la base de datos
+export { db };

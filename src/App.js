@@ -1,10 +1,11 @@
 
 import React, { useState, useEffect } from "react";
-import { db, collection, getDocs } from "./firebase/firebaseConfig";
+import { db } from "./firebase/firebaseConfig";
 import BetForm from "./components/BetForm";
 import PaymentInfo from "./components/PaymentInfo";
-import ParticipantsList from "./components/ParticipantsList";
+import { collection, getDocs } from "firebase/firestore";
 import "./styles/styles.css";
+import ParticipantsList from "./components/ParticipantsList";
 
 const App = () => {
     const [apuestas, setApuestas] = useState([]);
